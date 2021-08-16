@@ -15,6 +15,6 @@ describe('generateWordsFromNumbers function', () => {
   })
 
   test('returns correct array of letters if multiple number is provided in alphabetical order', () => {
-    expect(generateWordsFromNumbers(['2', '3'])).toEqual(['ad', 'ad', 'ad', 'be', 'be', 'be', 'cf', 'cf', 'cf',]);
+    expect(generateWordsFromNumbers(['2', '3'])).toEqual(['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf',]);
   })
 })
