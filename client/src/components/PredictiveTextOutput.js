@@ -24,6 +24,7 @@ const styles = {
     borderRadius: '5px',
     fontSize: '.7rem',
     marginTop: '10px',
+    marginBottom: '10px',
   },
   heading: {
     fontWeight: 'bold',
@@ -31,5 +32,6 @@ const styles = {
   },
   wordContainer: {
     display: 'flex',
+    flexWrap: 'wrap',
   }
 }

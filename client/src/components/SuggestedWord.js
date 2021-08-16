@@ -16,5 +16,6 @@ const styles = {
     fontSize: '1rem',
     padding: '2px',
     marginRight: '5px',
+    marginTop: '5px',
   }
 }
