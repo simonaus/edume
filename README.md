@@ -80,6 +80,7 @@ The application has been built with both server and client in a single repo. The
 - Words are generated only upon submission of the string. Generating words live as each new digit is added would have demanded a high number of API calls
 - Generated words are not saved between submissions, each new submission will generate a new list of words independent of previous searches
 - Generated words are not filtered to only include real words in English
+- Currently there is no loading state while data is being fetched from the API
 
 ## Technologies
 
