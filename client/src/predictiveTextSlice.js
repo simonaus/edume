@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const predictiveTextSlice = createSlice({
   name: 'predictiveText',
   initialState: {
-    suggestedWords: ['dog', 'animal']
+    suggestedWords: ['']
   },
   reducers: {
     updateSuggestedWords: (state, action) => {
