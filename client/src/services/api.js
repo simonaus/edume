@@ -1,6 +1,6 @@
 const getSuggestedWords = async (input) => {
   try {
-    const response = await fetch('http://localhost:3005', {
+    const response = await fetch('http://localhost:3005/suggestedWords', {
       method: 'GET',
       body: JSON.stringify(input)
     });
