@@ -19,6 +19,7 @@ const styles = {
     padding: '2%',
     borderRadius: '5px',
     fontSize: '.7rem',
+    marginBottom: '10px',
   },
   heading: {
     fontWeight: 'bold',
