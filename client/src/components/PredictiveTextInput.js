@@ -1,17 +1,25 @@
 import { useState } from 'react';
+import { getSuggestedWords } from '../services/api';
+import { useDispatch } from 'react-redux';
+import { updateSuggestedWords } from '../predictiveTextSlice';
 
 export const PredictiveTextInput = () => {
 
   const [input, setInput] = useState('');
   const [warning, setWarning] = useState('');
 
-  function submitHandler(e) {
+  const dispatch = useDispatch();
+
+  async function submitHandler(e) {
     e.preventDefault();
 
     if (input.match(new RegExp(/[^2-9]/))) {
       setWarning('* Input must only contain digits 2-9');
       return;
     }
+
+    const suggestedWords = await getSuggestedWords(input);
+    dispatch(updateSuggestedWords(suggestedWords));
 
     setWarning('');
     setInput('');

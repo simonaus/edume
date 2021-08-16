@@ -1,4 +1,4 @@
-const getWords = async (input) => {
+const getSuggestedWords = async (input) => {
   try {
     const response = await fetch('http://localhost:3005');
     const words = await response.json();
@@ -8,4 +8,4 @@ const getWords = async (input) => {
   }
 }
 
-export { getWords };
+export { getSuggestedWords };
