@@ -22,8 +22,7 @@ export const PredictiveTextInput = () => {
       <div style={styles.warning}>{warning}</div>
       <form onSubmit={submitHandler}>
         <input type='text' value={input} placeholder="Input digits (2-9) here" onChange={(e) => { setInput(e.target.value) }} />
-        <br />
-        <button type="submit">Submit</button>
+        <button style={styles.button} type="submit">Submit</button>
       </form>
     </div>
   );
@@ -34,5 +33,8 @@ const styles = {
     color: '#8B0000',
     fontWeight: 'bold',
     fontSize: '.7rem',
+  },
+  button: {
+    marginLeft: '5px',
   }
 }

@@ -1,5 +1,6 @@
 import { PredictiveTextInstructions } from '../components/PredictiveTextInstructions';
 import { PredictiveTextInput } from '../components/PredictiveTextInput';
+import { PredictiveTextOutput } from '../components/PredictiveTextOutput';
 
 export const PredictiveTextContainer = () => {
 
@@ -7,6 +8,7 @@ export const PredictiveTextContainer = () => {
     <div style={styles.container}>
       <PredictiveTextInstructions />
       <PredictiveTextInput />
+      <PredictiveTextOutput />
     </div>
   )
 };
