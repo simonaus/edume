@@ -1,4 +1,4 @@
-# Matchmaker
+# EduMe Assessment
 
 ## Table of contents
 - [Introduction](#Introduction)

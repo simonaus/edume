@@ -1,0 +1,2 @@
+const generateWordsFromNumbers = require('./generateWordsFromNumbers');
+
