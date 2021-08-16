@@ -1,13 +1,10 @@
-const generateSuggestedWords = (req, res) => {
+const generateWordsFromNumbers = require('./generateWordsFromNumbers');
 
-  const numbersArray = req.body.split('');
-  let wordsArray = [];
-
-  for (let number in numbersArray) {
-
-  }
-
-  return wordsArray;
+const getPredictedText = (req, res) => {
+  const numbersArray = req.body.query.split('');
+  const suggestedWords = generateWordsFromNumbers(numbersArray);
+  res.status(200).send(suggestedWords);
+  return;
 }
 
-module.exports = generateSuggestedWords;
+module.exports = getPredictedText;

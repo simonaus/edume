@@ -1,8 +1,8 @@
 const express = require('express');
 const { Router } = express;
 const router = Router();
-const generateSuggestedWords = require('./controller');
+const getPredictedText = require('./controller');
 
-router.get('/suggestedWords', generateSuggestedWords);
+router.get('/suggestedWords', getPredictedText);
 
 module.exports = router;

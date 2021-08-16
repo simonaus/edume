@@ -2,7 +2,7 @@ const getSuggestedWords = async (input) => {
   try {
     const response = await fetch('http://localhost:3005/suggestedWords', {
       method: 'GET',
-      body: JSON.stringify(input)
+      body: JSON.stringify({ query: input })
     });
 
     const words = await response.json();

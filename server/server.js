@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(router);
 
 app.listen(process.env.PORT || 3005, () => {
-  console.log(`Server listening on ${process.env.PORT || 3002}`);
+  console.log(`Server listening on ${process.env.PORT || 3005}`);
 });
 
 module.exports = app;
