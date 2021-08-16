@@ -12,6 +12,9 @@ export const SuggestedWord = (props) => {
 const styles = {
   container: {
     border: '1px solid #bbbbbb',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    fontSize: '1rem',
+    padding: '2px',
+    marginRight: '5px',
   }
 }
