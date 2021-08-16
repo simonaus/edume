@@ -1,4 +1,4 @@
-export const Word = (props) => {
+export const SuggestedWord = (props) => {
 
   return (
     <div style={styles.container}>

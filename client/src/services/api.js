@@ -7,3 +7,5 @@ const getWords = async (input) => {
     console.log('There was an error retrieving the suggested words from the server');
   }
 }
+
+export { getWords };

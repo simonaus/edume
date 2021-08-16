@@ -1,8 +1,12 @@
 import { PredictiveTextContainer } from './containers/PredictiveTextContainer';
+import store from './store'
+import { Provider } from 'react-redux'
 
 function App() {
   return (
-    <PredictiveTextContainer />
+    <Provider store={store}>
+      <PredictiveTextContainer />
+    </Provider>
   );
 }
 

@@ -1,4 +1,4 @@
-import { Word } from './Word';
+import { SuggestedWord } from './SuggestedWord';
 
 export const PredictiveTextOutput = () => {
 
@@ -6,7 +6,7 @@ export const PredictiveTextOutput = () => {
     <div style={styles.container}>
       <div style={styles.heading}>Suggested Words</div>
       <div style={styles.wordContainer}>
-        <Word text={'dog'} />
+        <SuggestedWord text={'dog'} />
       </div>
     </div>
   )
