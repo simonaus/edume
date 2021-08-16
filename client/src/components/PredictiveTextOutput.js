@@ -1,10 +1,12 @@
+import { Word } from './Word';
+
 export const PredictiveTextOutput = () => {
 
   return (
     <div style={styles.container}>
       <div style={styles.heading}>Suggested Words</div>
       <div style={styles.wordContainer}>
-
+        <Word text={'dog'} />
       </div>
     </div>
   )
@@ -20,6 +22,7 @@ const styles = {
   },
   heading: {
     fontWeight: 'bold',
+    marginBottom: '5px',
   },
   wordContainer: {
     display: 'flex',

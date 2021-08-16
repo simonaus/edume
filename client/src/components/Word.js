@@ -12,5 +12,6 @@ export const Word = (props) => {
 const styles = {
   container: {
     border: '1px solid #bbbbbb',
+    backgroundColor: 'white'
   }
 }
