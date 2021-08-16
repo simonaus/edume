@@ -1,12 +1,17 @@
 import { SuggestedWord } from './SuggestedWord';
+import { useSelector } from 'react-redux'
 
 export const PredictiveTextOutput = () => {
+
+  const suggestedWords = useSelector(state => state.predictiveText.suggestedWords);
 
   return (
     <div style={styles.container}>
       <div style={styles.heading}>Suggested Words</div>
       <div style={styles.wordContainer}>
-        <SuggestedWord text={'dog'} />
+        {suggestedWords.map(suggestedWord => {
+          return <SuggestedWord text={suggestedWord} />
+        })}
       </div>
     </div>
   )
