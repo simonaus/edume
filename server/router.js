@@ -3,6 +3,6 @@ const { Router } = express;
 const router = Router();
 const getPredictedText = require('./controller');
 
-router.get('/suggestedWords', getPredictedText);
+router.get('/:query', getPredictedText);
 
 module.exports = router;
