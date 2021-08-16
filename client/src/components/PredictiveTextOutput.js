@@ -9,8 +9,8 @@ export const PredictiveTextOutput = () => {
     <div style={styles.container}>
       <div style={styles.heading}>Suggested Words</div>
       <div style={styles.wordContainer}>
-        {suggestedWords.map(suggestedWord => {
-          return <SuggestedWord text={suggestedWord} />
+        {suggestedWords.map((suggestedWord, index) => {
+          return <SuggestedWord text={suggestedWord} key={index} />
         })}
       </div>
     </div>
